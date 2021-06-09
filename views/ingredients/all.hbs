@@ -1,0 +1,16 @@
+{{#extends 'base'}}
+
+{{#block 'title'}}Test Recipe 456{{/block}}
+
+{{#block 'content'}}
+<label class="form-label">All Ingredient List</label>
+<ul>
+    {{#each ingredientList}}
+        <li>{{this.name}}</li>
+    {{/each}}
+</ul>
+<a class="btn btn-primary mt-3" href="/ingredients/create">Add Ingredient</a>
+
+{{/block}}
+
+{{/extends}}

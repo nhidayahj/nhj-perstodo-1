@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/nhidayahj/nhj-perstodo-1#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "mongodb": "^3.6.9",
+    "wax-on": "^1.2.2"
   }
 }

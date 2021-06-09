@@ -1,0 +1,17 @@
+{{#extends 'base'}}
+
+{{#block 'title'}}Test Recipe Create{{/block}}
+
+{{#block 'content'}}
+
+<form method="POST">
+    <div>
+        <label class="form-label">Add Ingredients</label>
+        <input type="text" class="form-control" name="ingredientItem">
+    </div>
+    <input type="submit" class="btn btn-success btn-sm mt-3" />
+</form>
+
+{{/block}}
+
+{{/extends}}
