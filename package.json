@@ -1,0 +1,22 @@
+{
+  "name": "nhj-perstodo-1",
+  "version": "1.0.0",
+  "description": "![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhidayahj/nhj-perstodo-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhidayahj/nhj-perstodo-1/issues"
+  },
+  "homepage": "https://github.com/nhidayahj/nhj-perstodo-1#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
