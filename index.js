@@ -98,6 +98,25 @@ async function main() {
             res.status(200);
             res.send(newItem.ops)
     })
+
+
+    // update the todo cards
+
+    // delete todo 
+    app.post('/:todo_id/remove', async (req, res) => {
+
+        let removeTodo = await db.collection('todoCards')
+            .deleteOne({
+                _id:req.params.todo_id           
+            })
+        res.status(200);
+        res.send({
+            'message':"To-do card removed."
+        })
+    })
+
+
+
 }
 
 
