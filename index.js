@@ -83,7 +83,20 @@ async function main() {
 
     // create a todo card from user 
     app.post("/:profile/todo/new", async (req, res) => {
+        let userProfile = await db.collection('profiles')
+            .findOne({
+                username:req.params.profile
+            })
 
+        let newItem = await db.collection('todoCards')
+            .insertOne({
+                userID:userProfile._id,
+                todo_added:req.body.card_date,
+                category:req.body.category
+            })
+            console.log("new todo:" , userProfile, newItem.ops)
+            res.status(200);
+            res.send(newItem.ops)
     })
 }
 
